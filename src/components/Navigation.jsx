@@ -26,7 +26,7 @@ function Navigation()
       <NavItem refSection="#Workstation" navItemName="Workstations"></NavItem>
       <NavItem refSection="#Services" navItemName="Services"></NavItem>
       <NavItem refSection="#Contact" navItemName="Contact"></NavItem>
-      </div> : <NavBurgerMenu functionCall={()=>setRenderDropDown(!renderDropDown)}><span className="material-icons">menu</span></NavBurgerMenu>}
+      </div> : <NavBurgerMenu functionCall={()=>setRenderDropDown(!renderDropDown)}><i class="fas fa-bars fa-lg"></i></NavBurgerMenu>}
 
     </NavBar>
 
