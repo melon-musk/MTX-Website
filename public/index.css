@@ -1,0 +1,644 @@
+/* font-family: 'Exo', sans-serif;
+font-family: 'Krona One', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+
+:root{
+  --bg:#121212;
+  --bg-accent:#484a4d;
+  --text-color:#dadce1;
+  --nav-size:70px;
+  --border-radius: 8px;
+  --border: 1px solid #474a4d;
+  --speed: 500ms;
+}
+
+body
+{
+  background-color: black;
+  color: white;
+  font-family: 'Exo', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h2{
+  font-family: 'Krona One', sans-serif;
+  font-size: 3.5rem;
+}
+
+ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+a
+{
+  color: white;
+  text-decoration: none;
+}
+
+
+h4
+{
+  font-size: 2.5rem;
+}
+
+ .navbar
+{
+ position: fixed;
+z-index: 70;
+width: 100%;
+font-size: 1rem;
+background-color: black;
+}
+
+
+
+
+.navbar-nav
+{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navbar-nav .items
+{
+  display: flex;
+}
+
+.navbar div{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.nav-item
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+}
+
+.nav-item img
+{
+  padding-right: 5px;
+}
+
+.icon-button
+{
+ --button-size: calc(var(--nav-size) * 0.5);
+ height: var(--button-size);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: filter 300ms;
+ filter:  brightness(100%);
+}
+
+.icon-button:hover
+{
+  transition: filter 300ms;
+filter:  brightness(70%);
+}
+
+.logo
+{
+  height:  calc(var(--nav-size)*0.7);
+}
+
+.menu-btn
+{
+  transition: background-color 300ms;
+  background-color: black;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 10%;
+  border-style: solid;
+  color: white;
+}
+
+.menu-btn:hover
+{
+  transition: background-color 300ms;
+  background-color: white;
+  color: black;
+}
+
+
+.welcome-hero
+{
+  /* background-color: white; */
+  display: block;
+  height: 60%;
+  margin: 0;
+}
+
+.heroTitle
+{
+  text-align: center;
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  top:135px;
+  font-size: 3.5rem;
+  z-index: 69;
+}
+
+.welcome-hero video{
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  position: block;
+}
+
+.WelcomeHero-2
+{
+  margin-top: 5%;
+}
+
+
+.WelcomeHero-2 .text
+{
+  margin: 0;
+
+}
+
+.WelcomeHero-2 hr{
+ width: 40%;
+ margin: auto;
+}
+
+
+.WelcomeHero-2 h2
+{
+  padding: 0 0 2%;
+  margin: auto 0;
+  line-height: 1.3;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.WelcomeHero-2 p
+{
+  white-space: pre-line;
+  margin: 0;
+  text-align: center;
+  padding: 2% 6% 4%;
+  font-family: 'Titillium Web', sans-serif;
+  /* font-size: 1.8rem; */
+}
+
+.WelcomeHero-2 img
+{
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageGallery
+{
+  padding-bottom: 5%;
+}
+
+.imageGallery h2
+{
+  text-align: center;
+}
+
+
+.contentSectionGaming
+{
+  margin-top:35px;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  grid-template-rows: 0.3fr 1fr;
+  grid-template-areas: 
+  "title      subheading"
+  "image-body image-body"
+  ;
+}
+
+.contentSectionGaming h2
+{
+  grid-area: title;
+  width: 60%;
+  padding-left: 2%;
+  margin:auto 0;
+}
+
+.contentSectionGaming h4
+{
+  padding-right: 2%;
+  text-align: right;
+}
+
+.contentSectionGaming .subHeading
+{
+  grid-area: subheading;
+  width: 100%;
+  height: 100%;
+}
+
+.contentSectionGaming hr
+{
+width: 60%;
+margin:auto 2% auto auto;
+}
+
+
+.contentSectionGaming .image-text
+{
+  padding-top: 3%;
+  grid-area: image-body;
+  margin: 0;
+}
+
+.contentSectionGaming img
+{
+float: left;
+object-fit: cover;
+object-position: 0% 35%;
+width: 70%;
+height: 500px;
+padding: 0 2%;
+}
+
+.contentSectionGaming p
+{
+  display: flex;
+  align-items: flex-end;
+  text-align: left;
+  height: 470px;
+  padding-right: 2%;
+}
+
+
+
+/* Work station */
+
+
+.contentSectionWorkStation
+{
+  background-color: white;
+  color: black;
+  padding: 0 5%;
+  display: grid;
+  grid-template-areas: 
+  "title"
+  "image-body image-body"
+  ;
+
+}
+
+.contentSectionWorkStation h2
+{line-height: 1.3;
+  font-size: 4em;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 7%;
+  white-space: pre-line;
+}
+
+.contentSectionWorkStation .subHeading
+{
+  width: 30%;
+  font-size: 2rem;
+}
+
+.contentSectionWorkStation h4
+{
+  margin: 0;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.contentSectionWorkStation p
+{
+  width: 40%;
+  padding-top: 2%;
+  white-space: pre-line;
+}
+
+.contentSectionWorkStation img
+{
+  object-position: 0 40%;
+ position: relative;
+ bottom: 20vh;
+  object-fit: cover;
+  height: 480px;
+  width: 60%;
+  float: right;
+  padding-left: 3%;
+}
+
+@media screen and (max-width: 1268px)
+{
+  .contentSectionWorkStation img
+  {
+    height: 550px;
+  }
+  
+}
+
+@media screen and (max-width: 1055px)
+{
+  .contentSectionWorkStation img
+  {
+    height: 600px;
+  }
+  
+}
+
+
+.contentSectionWorkStation hr
+{
+  width: 30%;
+  margin: 0;
+  border: solid 0.3px;
+}
+
+.contentSectionService
+{
+  padding: 1% 2%;
+  background-color: white;
+  color: black;
+}
+
+.contentSectionService h2
+{
+  margin:0;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+/*contact section*/
+
+
+.contentSectionContact
+{
+  margin: 0;
+  background-color: white;
+  color: black;
+  padding: 2% 2%;
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 0.5fr 0.5fr 1fr;
+  grid-template-areas:
+  "title"
+  "line"
+  "image-body"
+}
+
+.contentSectionContact h2
+{
+  text-align: center;
+  white-space: pre-line;
+  font-size: 3rem;
+  grid-area: title;
+  margin-bottom: 0; 
+}
+
+.contentSectionContact h4
+{
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.contentSectionContact hr
+{
+  margin: 0 auto;
+  grid-area: line;
+  width: 40%;
+  border: solid 0.3px;
+}
+
+.contentSectionContact .image-text
+{
+  grid-area: image-body;
+  margin: 0;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contentSectionContact img
+{
+  width: 20%;
+  height: 20%;
+}
+
+.contentSectionContact .subHeading
+{
+  padding: 2% 0;
+}
+
+.contentSectionContact p
+{
+  width: auto;
+  margin: auto 0;
+  white-space: pre-line;
+}
+
+.contentSectionContact a
+{
+  transition: color 300ms;
+  color: black;
+  text-decoration: underline;
+}
+
+.contentSectionContact a:hover
+{
+  transition: color 300ms;
+  color: gray;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 684px)
+{
+  .contentSectionContact img
+  {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+.footer{
+  text-align: center;
+  color: white;
+  padding: 0 100px 20px;
+  background-color: black;
+}
+
+.footer-icons
+{
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  margin: 5px 20px;
+  padding: 5px 10px;
+}
+
+.footer-icons:hover{
+  text-decoration: none;
+  color: grey;
+}
+
+/* drop down*/
+@keyframes opacityChange
+{
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+
+.dropDown
+{
+  position: fixed;
+  display: block; 
+  width: 100%; 
+  height: 35%; 
+  top: 50px;
+  bottom: 0;
+  background-color: black;
+  z-index: 99;
+  animation-name: opacityChange;
+  animation-duration: 800ms
+}
+
+
+@media screen and (max-width: 815px)
+{
+  .heroTitle
+ {
+   font-size: 2.5rem;
+ }
+
+ h2
+ {
+   font-size: 3rem;
+ }
+
+.WelcomeHero-2 h2
+{
+  font-size: 3rem;
+}
+
+}
+
+@media screen and (max-width: 928px)
+{
+ .WelcomeHero-2 h2
+{
+  padding: 0 0 2%;
+  margin: auto 0;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.WelcomeHero-2 p
+{
+  text-align: left;
+}
+
+ .WelcomeHero-2 img
+{
+  object-fit: cover;
+  width: 100%;
+  height: 50vw;
+}
+
+.contentSectionGaming
+{
+ display: block;
+}
+
+.contentSectionGaming h4
+{
+ text-align: left;
+ padding: 0 2%;
+}
+
+.contentSectionGaming hr
+{
+  margin-left:2%;
+  margin-bottom: 10%;
+  width: 30%;
+}
+ 
+.contentSectionGaming img , .contentSectionWorkStation img
+{
+position: static;
+float: none;
+display: block;
+object-fit: cover;
+height: 70vw;
+}
+
+.contentSectionGaming p, .contentSectionWorkStation p
+{
+  float: none;
+  padding:0 3% 1%;
+  height: 100%;
+  width: auto;
+}
+
+.contentSectionGaming img
+{
+  width: 95%;
+}
+
+.contentSectionWorkStation img
+{
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 0;
+}
+
+
+.contentSectionWorkStation .subHeading
+{
+  width: 100%;
+}
+
+.contentSectionWorkStation h4
+{
+   text-align: center;
+}
+
+.contentSectionWorkStation h2
+{
+  font-size: 10vw;
+}
+
+.contentSectionService h2
+{
+  font-size:8vw;
+}
+
+.contentSectionService h4
+{
+  font-size: 6vw;
+}
+
+.contentSectionWorkStation hr
+{
+  margin: auto;
+}
+ 
+}
