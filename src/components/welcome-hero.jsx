@@ -15,7 +15,7 @@ function WelcomeHero(props)
 
 <section className="welcome-hero">
     <h1 className="heroTitle">{props.title}</h1>
-    <video className='videoTag' autoPlay loop muted>
+    <video className='videoTag' poster="images/v1.jpg" muted playsInline autoPlay loop >
     <source src={vidSrc()} type='video/mp4' />
 </video>
 </section>
