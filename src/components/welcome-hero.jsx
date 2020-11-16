@@ -2,6 +2,13 @@ import React from "react";
 
 
 
+const vidSrc= () => {
+    if(window.innerWidth <=770) return ("videobackground/V1_480p.m4v"); 
+    else return ("videobackground/V1_720p.m4v");
+}
+
+console.log(vidSrc);
+
 function WelcomeHero(props)
 {
  return(
@@ -9,7 +16,7 @@ function WelcomeHero(props)
 <section className="welcome-hero">
     <h1 className="heroTitle">{props.title}</h1>
     <video className='videoTag' autoPlay loop muted>
-    <source src="videobackground/v1.m4v" type='video/mp4' />
+    <source src={vidSrc()} type='video/mp4' />
 </video>
 </section>
 
